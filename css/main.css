@@ -113,14 +113,14 @@ section {
     font-weight: bold;
     color: (48, 47, 47)
  }
-.skills{
+#skills{
     background: #b1c9b0;
-    padding: 150px 50px 120px 50px;
+    /* padding: 150px 50px 120px 50px;
     background-position: center;
     background-repeat: no-repeat;
-    display: table;
-    width: 100%;
-    height: auto;
+    display: table; */
+    width: 100vw;
+    height: auto; 
 }
  .portfolio-item {
     margin-top: 20px;
@@ -153,12 +153,9 @@ section {
  }
 #contact {
     background-color: #b07da3;
-    padding: 150px 50px 120px 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: table;
-    width: 100%;
-    height: auto;
+    /* padding: 150px 50px 120px 50px; */
+     width: 100vw;
+    /* height: auto; */
  }
  .info{
   margin-left: 1em;
