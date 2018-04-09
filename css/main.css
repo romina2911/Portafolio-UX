@@ -85,7 +85,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     display: table;
-    width: 100%;
+    width: 100vw;
     height: auto;
     /*margin-top: -18px;*/
     padding: 15em 0;
@@ -123,7 +123,7 @@ section {
     background-repeat: no-repeat;
     display: table; */
     width: 100vw;
-    height: auto; 
+    height: auto;
 }
  .portfolio-item {
     margin-top: 20px;
@@ -142,16 +142,18 @@ section {
   border-color: rgb(73, 73, 73);
  }
 
+
  #work .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    width: 100vw;
  }
 
  #work .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 350px
+    max-width: 500px
  }
 
  .portfolio-item .img-responsive {
@@ -164,9 +166,9 @@ section {
  }
 #contact {
     background-color: #b07da3;
-    /* padding: 150px 50px 120px 50px; */
+    padding: 150px 50px 120px 50px;
      width: 100vw;
-    /* height: auto; */
+    height: auto;
  }
  .info{
   margin-left: 1em;
@@ -182,6 +184,12 @@ section {
 
     .intro .intro-body .intro-text {
         font-size: 23px;
+    }
+    #contact #work {
+      width: 100vw;
+    }
+    .intro{
+      width: 100vw;
     }
 
 
@@ -206,6 +214,7 @@ section {
     .intro .intro-body .intro-heading {
 
         font-size: 60px;
+        width: auto;
     }
 
     .intro .intro-body .intro-text {
@@ -214,6 +223,12 @@ section {
 
     }
 
+    #contact #work {
+      width: 100vw;
+    }
+    .intro{
+      width: 100vw;
+    }
    section h2.section-heading {
         font-size: 35px;
 
@@ -238,167 +253,32 @@ section {
 
     }
 
+    #contact #work {
+      width: 100vw;
+    }
+    .intro{
+      width: 100vw;
+    }
+
+    @media(max-width:320px) {
+      .intro .intro-body .intro-heading {
+  
+          font-size: 35px;
+      }
+  
+      .intro .intro-body .intro-text {
+          font-size: 10px;
+  
+  
+      }
+  
+      #contact #work {
+        width: 100vw;
+      }
+      .intro{
+        width: 100vw;
+      }
+    }
+
 
  }
- /*animation*/
- @keyframes music-notes {
-  0%, 100% {
-    transform: translate(0, 0); }
-  50% {
-    transform: translate(0, 5px); } }
-
-@keyframes tea-steeper {
-  0%, 100% {
-    transform: translate(0, 0); }
-  50% {
-    transform: translate(2px, 0); } }
-
-@keyframes tea-steam {
-  0%, 100% {
-    transform: translate(0, 0) scale(1, 1); }
-  50% {
-    transform: translate(3px, 0) scale(0.8, 1); } }
-
-@keyframes cat-eyes {
-  0%, 100% {
-    transform: scale(1, 1); }
-  30%, 70% {
-    transform: scale(1, 0.3); } }
-
-@keyframes cat-eyes-blink {
-  0%, 6%, 100% {
-    transform: scale(1, 1); }
-  2% {
-    transform: scale(0.5, 0.5); } }
-
-@keyframes safie-tail {
-  0%, 100% {
-    transform: rotate(0); }
-  40%, 70% {
-    transform: rotate(-5deg); } }
-
-@keyframes serena-eyes {
-  0%, 100% {
-    transform: translate(0, 0); }
-  25% {
-    transform: translate(-0.5px, 0); }
-  50% {
-    transform: translate(1.5px, 0); } }
-
-@keyframes serena-hands {
-  0%, 100% {
-    transform: translate(-5px, 0); }
-  70% {
-    transform: translate(5px, 0); } }
-
-@keyframes serena-leg {
-  0%, 100% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(0.7deg); } }
-
-@keyframes serena-shoe {
-  0%, 100% {
-    transform: rotate(0); }
-  25% {
-    transform: rotate(-4deg); }
-  50% {
-    transform: rotate(4deg); } }
-
-@keyframes leaves-left {
-  0%, 100% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(6deg); } }
-
-@keyframes leaves-right {
-  0%, 100% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(-6deg); } }
-
-
-.landing {
-  background: #c04848;
-  background: linear-gradient(to top, #c04848, #480048);
-  transition: height .5s ease;
-  z-index: 50; }
-
-.landing__content {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: block; }
-
-.landing__title {
-  display: none; }
-
-.landing__svg--animate {
-  transform-origin: 50% 50%; }
-
-.music-notes .landing__svg--animate {
-  animation-name: music-notes;
-  animation-iteration-count: infinite; }
-
-.music-notes .music-notes__1 {
-  animation-duration: 5s; }
-
-.music-notes .music-notes__2 {
-  animation-duration: 4s;
-  animation-delay: .5s; }
-
-.music-notes .music-notes__3 {
-  animation-duration: 7s;
-  animation-delay: .2s; }
-
-.tea .tea__cup__steeper {
-  animation: tea-steeper 10s infinite; }
-
-.tea .tea__steam__large {
-  animation: tea-steam 5s infinite; }
-
-.tea .tea__steam__small {
-  animation: tea-steam 8s .4s infinite; }
-
-.safie__eyes .landing__svg--animate {
-  animation-name: cat-eyes;
-  animation-iteration-count: infinite; }
-
-.safie__eyes .safie__eyes__left,
-.safie__eyes .safie__eyes__right {
-  animation-duration: 15s; }
-
-.safie__tail {
-  transform-origin: 100% 0%;
-  animation: safie-tail 7s infinite; }
-
-.pace__tail {
-  transform-origin: 100% 100%;
-  animation: safie-tail 3s .5s infinite; }
-
-.pace__eyes .pace__eyes__left,
-.pace__eyes .pace__eyes__right {
-  animation: cat-eyes-blink 5s infinite; }
-
-.serena__eyes .serena__eyes--left,
-.serena__eyes .serena__eyes--right {
-  animation: serena-eyes 7s 1s infinite; }
-
-.serena__hand__left {
-  animation: serena-hands 6s 2s infinite; }
-
-.serena__leg {
-  transform-origin: 0 0;
-  animation: serena-leg 10s infinite; }
-
-.serena__leg__shoe {
-  animation: serena-shoe 20s infinite; }
-
-.plant .leaf--right {
-  transform-origin: 0% 50%;
-  animation: leaves-right 8s infinite; }
-
-.plant .leaf--left {
-  transform-origin: 100% 100%;
-  animation: leaves-left 8s infinite; }
