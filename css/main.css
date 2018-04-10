@@ -75,6 +75,9 @@ section {
    background-color: rgb(31, 30, 30);
 
 }
+.contact{
+    font-weight: bold;
+}
 
 .ux{
   font-weight: bolder;
@@ -85,7 +88,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     display: table;
-    width: 100vw;
+    width: 100%;
     height: auto;
     /*margin-top: -18px;*/
     padding: 15em 0;
@@ -122,7 +125,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     display: table; */
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
  .portfolio-item {
@@ -146,7 +149,7 @@ section {
  #work .portfolio-item {
     right: 0;
     margin: 0 0 15px;
-    width: 100vw;
+    width: 100%;
  }
 
  #work .portfolio-item .portfolio-link {
@@ -167,7 +170,7 @@ section {
 #contact {
     background-color: #b07da3;
     padding: 150px 50px 120px 50px;
-     width: 100vw;
+     width: 100%;
     height: auto;
  }
  .info{
@@ -185,13 +188,7 @@ section {
     .intro .intro-body .intro-text {
         font-size: 23px;
     }
-    #contact #work {
-      width: 100vw;
-    }
-    .intro{
-      width: 100vw;
-    }
-
+ 
 
     section h2.section-heading {
         font-size: 55px;
@@ -223,12 +220,6 @@ section {
 
     }
 
-    #contact #work {
-      width: 100vw;
-    }
-    .intro{
-      width: 100vw;
-    }
    section h2.section-heading {
         font-size: 35px;
 
@@ -250,14 +241,7 @@ section {
     .intro .intro-body .intro-text {
         font-size: 18px;
 
-
     }
-
-    #contact #work {
-      width: 100vw;
-    }
-    .intro{
-      width: 100vw;
     }
 
     @media(max-width:320px) {
@@ -268,17 +252,10 @@ section {
   
       .intro .intro-body .intro-text {
           font-size: 10px;
-  
+
   
       }
   
-      #contact #work {
-        width: 100vw;
-      }
-      .intro{
-        width: 100vw;
-      }
-    }
 
 
  }
